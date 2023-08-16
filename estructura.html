@@ -140,9 +140,81 @@
     <li>Encender el aparato</li>
   </ol>
 
+<!-- edward   -->
+<h1>Imagenes y objetos<h1>
+    <html>
+    <head><title>Imagenes y objetos</title>
+    
+    <p>Las imágenes son uno de los elementos más importantes de las páginas web. De hecho, prácticamente todas las páginas web contienen
+    alguna imagen y la mayoría incluyen decenas de imágenes.
+    <p>
+    
+    <h1>definición de la etiqueta <img> </h1>
+    <p>utilizada para incluir las imágenes en las páginas HTML:
+    
+    Etiqueta	        \<img>
+    
+    Atributos comunes	básicos, internacionalización y eventos
+    
+    Atributos propios	src = "url" - Indica la URL de la imagen que se muestra.
+                            alt = "texto" - Descripción corta de la imagen.
+                            longdesc = "url" - Indica una URL en la que puede encontrarse una descripción más detallada de la imagen.
+                            name = "texto" - Nombre del elemento imagen.
+                            height = "unidad_de_medida" - Indica la altura con la que se debe mostrar la imagen (no es obligatorio que coincida con la
+                                                          altura original de la imagen).
+                            width = "unidad_de_medida" - Indica la anchura con la que se debe mostrar la imagen (no es obligatorio que coincida con la
+                                                         anchura original de la imagen).
+    
+    Tipo de elemento	En línea y etiqueta vacía
+    
+    Descripción	        Se emplea para incluir imágenes en los documentos.
+    
+    </p>
+    Los dos atributos requeridos son src y alt. El atributo src es similar al atributo href de los enlaces, ya que establece la URL de la imagen que se
+    va a mostrar en la página. Las URL indicadas pueden ser absolutas o relativas. El atributo alt permite describir el contenido de la imagen mediante
+    un texto breve. Las descripciones deben tener una longitud inferior a 1024 caracteres y son útiles para las personas y dispositivos discapacitados
+    que no pueden acceder a las imágenes.
+    
+    <h2>Ejemplo sencillo para incluir una imagen:</h2>
+    
+    
+    <img src="logotipo.gif" alt="Logotipo de Mi Sitio" />
+    
+    <p>Como <img>
+    es una etiqueta vacía, no tiene etiqueta de cierre. No obstante, para que la página XHTML sea válida, todas las etiquetas deben estar
+    cerradas. Como ya se explicó anteriormente, para cerrar una etiqueta vacía se incluyen los caracteres /> al final de la etiqueta.
+    </p>
+
+     <!-- Mapa de imagen  -->
+     <img src="mapa_mundo.gif" usemap="#continentes" />
+...
+<map name="continentes">
+  ...
+</map>
+<!-- P2  -->
+<img src="imagen.gif" usemap="#mapa_zonas" />
+
+<map name="mapa_zonas">
+  <area shape="rect" coords="20,25,84,113" href="rectangulo.html" />
+  <area shape="polygon" coords="90,25,162,26,163,96,89,25,90,24" href="triangulo.html" />
+  <area shape="circle" coords="130,114,29" href="circulo.html" />
+  <area shape="rect" coords="19,156,170,211" href="mailto:rectangulo@direccion.com" />
+  <area shape="default" nohref="nohref" />
+</map>
+<!--  -->
+<object data="PlanetaTierra.mpeg" type="application/mpeg" />
+<!--  -->
+<object title="La Tierra vista desde el espacio" classid="http://www.observer.mars/TheEarth.py"
+  <!-- Formato alternativo en forma de vídeo -->
+  <object data="PlanetaTierra.mpeg" type="application/mpeg">
+    <!-- Otro formato alternativo mediante una imagen GIF -->
+    <object data="PlanetaTierra.gif" type="image/gif">
+      <!-- Si el navegador no soporta ningún formato, se muestra el siguiente texto -->
+      La <strong>Tierra</strong> vista desde el espacio.
+    </object>
+  </object>
+</object>
 
 
-
-        
 </body>
 </html>
